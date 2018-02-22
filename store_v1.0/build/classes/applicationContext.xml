@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="UserDao"  class="com.dao.Impl.UserDaoImpl"></bean>
+	<bean id="CategoryDao"  class="com.dao.Impl.CategoryDaoImpl"></bean>
+	<bean id="ProductDao"  class="com.dao.Impl.ProductDaoImpl"></bean>
+	<bean id="OrderDao"  class="com.dao.Impl.OrderDaoImpl"></bean>
+	<bean id="CartDao"  class="com.dao.Impl.CartDaoImpl"></bean>
+	<bean id="UserService"  class="com.service.Impl.UserServiceImpl"></bean>
+	<bean id="CategoryService"  class="com.service.Impl.CategoryServiceImpl"></bean>
+	<bean id="ProductService"  class="com.service.Impl.ProductServiceImpl"></bean>
+	<bean id="OrderService"  class="com.service.Impl.OrderServiceImpl"></bean>
+	<bean id="CartService"  class="com.service.Impl.CartServiceImpl"></bean>
+	<!-- 连接池配置 -->
+	<bean name="c3p0"></bean>
+</beans>
