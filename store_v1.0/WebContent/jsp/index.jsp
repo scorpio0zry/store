@@ -17,11 +17,7 @@
 
 	<body>
 		<%@include file="top.jsp" %>
-			<!--
-            	作者：ci2713@163.com
-            	时间：2015-12-30
-            	描述：轮播条
-            -->
+			
 			<div class="container-fluid">
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
@@ -64,11 +60,7 @@
 					</a>
 				</div>
 			</div>
-			<!--
-            	作者：ci2713@163.com
-            	时间：2015-12-30
-            	描述：商品显示
-            -->
+			
 			<div class="container-fluid">
 				<div class="col-md-12">
 					<h2>最新商品&nbsp;&nbsp;<img src="${pageContext.request.contextPath }/img/title2.jpg"/></h2>

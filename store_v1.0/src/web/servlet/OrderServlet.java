@@ -1,7 +1,5 @@
 package web.servlet;
 
-import java.sql.SQLException;
-import java.util.Date;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -99,8 +97,7 @@ public class OrderServlet extends BaseServlet {
 		
 			return "/jsp/order_list.jsp";
 		}catch(Exception e){
-			e.printStackTrace();
-			throw new RuntimeException();
+			return "404.jsp";
 		}
 	}
 	

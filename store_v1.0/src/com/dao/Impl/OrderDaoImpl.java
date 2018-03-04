@@ -67,7 +67,7 @@ public class OrderDaoImpl implements OrderDao {
 		Connection conn = C3P0Utils.getConnection();
 		String sql = "select * from orders where uid = ? order by ordertime desc limit ?,?";
 		List<Order> list = qr.query(sql, new BeanListHandler<Order>(Order.class), user.getUid(),begin,pageEach);
-		/*//为了读取时、分、秒 单独读取一下
+		//为了读取时、分、秒 单独读取一下
 		sql = "select ordertime from orders where uid = ? order by ordertime desc limit ?,?";
 		PreparedStatement ps = conn.prepareStatement(sql);
 		ps.setString(1, user.getUid());
@@ -80,7 +80,7 @@ public class OrderDaoImpl implements OrderDao {
 			java.util.Date date = new java.util.Date(ts.getTime());
 			list.get(index).setOrdertime(date);
 			index++;		
-		}*/
+		}
 		for (Order order : list) {
 			sql = "select * from orderitem o,product p where p.pid = o.pid and o.oid = ?";
 			List<Map<String, Object>> listMap = qr.query(sql, new MapListHandler(), order.getOid());

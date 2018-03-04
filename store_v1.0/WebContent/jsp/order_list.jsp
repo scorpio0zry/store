@@ -60,7 +60,7 @@
 								
 							</tr>	
 							<tr class="success">
-								<th colspan="5">下单时间：${fn:substring(order.ordertime,0,19) }</th>
+								<th colspan="5">下单时间：${order.ordertime }</th>
 							</tr>						
 							<tr class="warning">
 								<th>图片</th>

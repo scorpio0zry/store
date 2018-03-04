@@ -20,7 +20,6 @@
 	})
  </script>
 			<!--
-            	时间：2015-12-30
             	描述：菜单栏
             -->
 			<div class="container-fluid">
@@ -48,7 +47,6 @@
 				</div>
 			</div>
 			<!--
-            	时间：2015-12-30
             	描述：导航条
             -->
 			<div class="container-fluid">
